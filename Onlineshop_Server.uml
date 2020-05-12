@@ -1,0 +1,81 @@
+﻿[Files]
+File0=C:\Users\Stamm\Documents\GitHub\Onlineshop_project\Onlineshop_Server.java
+
+[Box:  - Onlineshop_Server]
+X=2090
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=14
+FontName=Segoe UI
+
+[Box:  - Server]
+X=1331
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=14
+FontName=Segoe UI
+
+[Box:  - Server$ClientMessageHandler]
+X=546
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=14
+FontName=Segoe UI
+
+[Box:  - Server$ClientMessageHandler$ClientSocketWrapper]
+X=20
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=14
+FontName=Segoe UI
+
+[Box:  - Server$NewConnectionHandler]
+X=984
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=14
+FontName=Segoe UI
+
+[Diagram]
+comments=0
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=14
+ShowObjectDiagram=0
+
+[Connections]
+V0=Onlineshop_Server#Server#Inheritends####0#0#0###0#0
+V1=Server#Server$ClientMessageHandler#AssociationDirected####0#0#0###0#0
+V2=Server#Server$ClientMessageHandler$ClientSocketWrapper#AssociationDirected####0#0#0###0#0
+V3=Server#Server$NewConnectionHandler#AssociationDirected####0#0#0###0#0
+
+[Interactive]
+I0=
+
+[Window]
+Left=52
+Top=52
+Width=1203
+Height=516
+

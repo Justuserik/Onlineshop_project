@@ -1,0 +1,71 @@
+﻿[Files]
+File0=C:\Users\Stamm\Documents\GitHub\Onlineshop_project\Client.java
+File1=C:\Users\Stamm\Documents\GitHub\Onlineshop_project\Onlineshop_Client.java
+
+[Box:  - Client]
+X=980
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=14
+FontName=Segoe UI
+
+[Box:  - Client$MessageHandler]
+X=494
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=14
+FontName=Segoe UI
+
+[Box:  - Client$MessageHandler$SocketWrapper]
+X=20
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=14
+FontName=Segoe UI
+
+[Box:  - Onlineshop_Client]
+X=1374
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=14
+FontName=Segoe UI
+
+[Diagram]
+comments=0
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=14
+ShowObjectDiagram=0
+
+[Connections]
+V0=Client#Client$MessageHandler#AssociationDirected####0#0#0###0#0
+V1=Client#Client$MessageHandler$SocketWrapper#AssociationDirected####0#0#0###0#0
+V2=Onlineshop_Client#Client#Inheritends####0#0#0###0#0
+
+[Interactive]
+I0=
+
+[Window]
+Left=156
+Top=156
+Width=1203
+Height=516
+
