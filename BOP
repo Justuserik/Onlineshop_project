@@ -1,2 +1,12 @@
 BOP (Basic_Onlineshop_Protocol)
 USER commands:
+?LOGIN:username:password -> !LOGGEDIN / !LOGINERROR
+?BASKET -> !BASKET:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:
+?SEARCH:keyword -> !RESULTS:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:
+?ADDTOBASKET:artikelnummer -> !ADDTOBASKET:SUCCESS/FAILURE:artikelnummer
+?REMOVEFROMBASKET:artikelnummer -> !REMOVEFROMBASKET:SUCCESS/FAILURE:artikelnummer
+?NEWACCOUNT:username:password:email -> !NEWACCOUNT:SUCCESS/FAILURE:username
+?LOGOUT&BUY -> !LOGOUT&BUY:SUCCESS/FAILURE
+?CLEARBASKET -> !CLEARBASKET
+gibberish -> !ERR
+?HISTORY -> !HISTORY:!BESTELLUNG
