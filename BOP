@@ -16,3 +16,4 @@ gibberish -> !ERR
 ?ADDTOWISHLIST -> !ADDTOWISHLIST:SUCCESS/FAILURE:artikelnummer
 ?REMOVEFROMWISHLIST:artikelnummer -> !REMOVEFROMWISHLIST:SUCCESS/FAILURE:artikelnummer
 ?CLEARWISHLIST -> !CLEARWISHLIST
+?RECOMMEND:topn -> !RECOMMEND:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:
