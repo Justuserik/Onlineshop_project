@@ -9,4 +9,10 @@ USER commands:
 ?LOGOUT&BUY -> !LOGOUT&BUY:SUCCESS/FAILURE
 ?CLEARBASKET -> !CLEARBASKET
 gibberish -> !ERR
-?HISTORY -> !HISTORY:!BESTELLUNG
+?HISTORY -> !HISTORY:!BESTELLUNG:artikelnummer,name,beschreibung,preis,hersteller,bestellungsnummer:!BESTELLUNG:artikelnummer,name,beschreibung,preis,hersteller,bestellungsnummer
+?NOTIFICATIONS -> !NOTIFICATION:text:!NOTIFICATION
+?DELETENOTIFICATIONS -> !DELETENOTIFICATIONS
+?WISHLIST -> !WISHLIST:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:
+?ADDTOWISHLIST -> !ADDTOWISHLIST:SUCCESS/FAILURE:artikelnummer
+?REMOVEFROMWISHLIST:artikelnummer -> !REMOVEFROMWISHLIST:SUCCESS/FAILURE:artikelnummer
+?CLEARWISHLIST -> !CLEARWISHLIST
