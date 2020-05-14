@@ -13,8 +13,8 @@ FontSize=12
 FontName=Segoe UI
 
 [Box:  - User]
-X=440
-Y=40
+X=445
+Y=33
 MinVis=0
 ShowParameter=4
 SortOrder=0

@@ -13,6 +13,7 @@ public class Account {
   private String Passwort;
   private List<Artikel> Basket;
   private String Email;
+  private List<Artikel> Wishlist;
   // end attributes
   
   public Account(String Name, String Passwort, String Email) {
@@ -20,6 +21,7 @@ public class Account {
     this.Passwort = Passwort;
     this.Email = Email;
     this.Basket = new List<Artikel>();
+    this.Wishlist = new List<Artikel>();
   }
 
   // start methods
@@ -58,6 +60,10 @@ public class Account {
   public void clearbasket() {
     this.Basket = new List<Artikel>();
   }
+  public List<Artikel> getWishlist() {
+    return Wishlist;
+  }
+
   // end methods
 } // end of Account
 

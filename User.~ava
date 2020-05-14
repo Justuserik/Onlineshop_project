@@ -14,7 +14,7 @@ public class User {
   private Account myaccount;
   // end attributes
   
-  private User(String Ip, int Port) {
+  public User(String Ip, int Port) {
     this.Ip = Ip;
     this.Port = Port;
     this.myaccount = null;
