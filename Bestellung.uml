@@ -1,0 +1,56 @@
+﻿[Files]
+File0=C:\Users\Justus.S\Documents\GitHub\Onlineshop_project\Account.java
+File1=C:\Users\Justus.S\Documents\GitHub\Onlineshop_project\Artikel.java
+File2=C:\Users\Justus.S\Documents\GitHub\Onlineshop_project\Bestellung.java
+
+[Box:  - Account]
+X=20
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - Artikel]
+X=440
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - Bestellung]
+X=1113
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Diagram]
+comments=0
+OffsetX=0
+OffsetY=99
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=12
+ShowObjectDiagram=0
+
+[Connections]
+V0=Account#Artikel#Aggregation##0#0#0
+V1=Bestellung#Artikel#AssociationDirected##0#0#0
+V2=Bestellung#Account#AssociationDirected##0#0#0
+
+[Interactive]
+I0=
+
