@@ -12,6 +12,7 @@ public class Bestellung {
   private Artikel artikel;
   private int Bestellungsnummer;
   private Account Käufer;
+  private String Status;
   // end attributes
   
   public Bestellung(Artikel artikel, int Bestellungsnummer, Account Käufer) {
@@ -31,6 +32,14 @@ public class Bestellung {
 
   public Account getKäufer() {
     return Käufer;
+  }
+
+  public String getStatus() {
+    return Status;
+  }
+
+  public void setStatus(String StatusNew) {
+    Status = StatusNew;
   }
 
   // end methods

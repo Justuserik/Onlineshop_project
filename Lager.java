@@ -38,6 +38,16 @@ public class Lager {
     return temp;
     }
   
+  public Artikel searchitemtbynumber(int number){
+    while (this.myitems.hasAccess()) { 
+      if (this.myitems.getContent().getArtikelnummer()==number) {
+        return myitems.getContent();
+      } // end of if
+      this.myitems.next();
+    } // end of while
+    return null;
+    }
+  
   public void additem(String pname, int ppreis, String Beschreibung, String Hersteller) {
     Artikel temp = new Artikel(pname,artikelnummercounter,ppreis,Beschreibung,Hersteller);
     artikelnummercounter++;

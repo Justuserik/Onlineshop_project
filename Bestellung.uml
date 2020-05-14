@@ -14,8 +14,8 @@ FontSize=12
 FontName=Segoe UI
 
 [Box:  - Artikel]
-X=440
-Y=40
+X=154
+Y=33
 MinVis=0
 ShowParameter=4
 SortOrder=0
@@ -24,8 +24,8 @@ FontSize=12
 FontName=Segoe UI
 
 [Box:  - Bestellung]
-X=1113
-Y=40
+X=653
+Y=195
 MinVis=0
 ShowParameter=4
 SortOrder=0
