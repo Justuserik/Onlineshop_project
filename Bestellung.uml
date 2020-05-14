@@ -36,7 +36,7 @@ FontName=Segoe UI
 [Diagram]
 comments=0
 OffsetX=0
-OffsetY=99
+OffsetY=0
 Visibility=0
 ShowParameter=4
 SortOrder=0
@@ -53,4 +53,10 @@ V2=Bestellung#Account#AssociationDirected##0#0#0
 
 [Interactive]
 I0=
+
+[Window]
+Left=130
+Top=130
+Width=1124
+Height=375
 

@@ -54,7 +54,10 @@ public class Account {
   public void setEmail(String EmailNew) {
     Email = EmailNew;
   }
-
+  
+  public void clearbasket() {
+    this.Basket = new List<Artikel>();
+  }
   // end methods
 } // end of Account
 

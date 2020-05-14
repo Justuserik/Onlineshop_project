@@ -14,6 +14,7 @@ public class Artikel {
   private int Artikelnummer;
   private String Beschreibung;
   private String Hersteller;
+  private int verkaufszahl;
   // end attributes
   
   public Artikel(String Name, int Artikelnummer, int Preis, String Beschreibung, String Hersteller) {
@@ -22,6 +23,7 @@ public class Artikel {
     this.Artikelnummer = Artikelnummer;
     this.Beschreibung = Beschreibung;
     this.Hersteller = Hersteller;
+    this.verkaufszahl = 0;
   }
 
   // start methods
@@ -44,7 +46,14 @@ public class Artikel {
   public String getHersteller() {
     return Hersteller;
   }
-
+  
+  public void verkauft() {
+    this.verkaufszahl++;
+  }
+  
+  public int getverkaufszahl(){
+    return this.verkaufszahl;
+    }
   // end methods
 } // end of Artikel
 

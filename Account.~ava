@@ -19,7 +19,7 @@ public class Account {
     this.Name = Name;
     this.Passwort = Passwort;
     this.Email = Email;
-    this.Basket = null;
+    this.Basket = new List<Artikel>();
   }
 
   // start methods
@@ -54,7 +54,10 @@ public class Account {
   public void setEmail(String EmailNew) {
     Email = EmailNew;
   }
-
+  
+  public void clearbasket() {
+    this.Basket = new List<Artikel>();
+  }
   // end methods
 } // end of Account
 
