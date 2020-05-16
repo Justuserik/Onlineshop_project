@@ -18,3 +18,4 @@ gibberish -> !ERR
 ?CLEARWISHLIST -> !CLEARWISHLIST
 ?RECOMMEND:topn -> !RECOMMEND:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:
 ?ARTIKEL:artikelnummer -> !ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller
+P.s.: the server may reply with FAILURE. In this case the User is usually not logged in, and therefore can't use the requested service.
