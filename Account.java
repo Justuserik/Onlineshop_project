@@ -14,6 +14,7 @@ public class Account {
   private List<Artikel> Basket;
   private String Email;
   private List<Artikel> Wishlist;
+  private List<String> Notifications;
   // end attributes
   
   public Account(String Name, String Passwort, String Email) {
@@ -22,6 +23,7 @@ public class Account {
     this.Email = Email;
     this.Basket = new List<Artikel>();
     this.Wishlist = new List<Artikel>();
+    this.Notifications = new List<String>();
   }
 
   // start methods
@@ -102,6 +104,18 @@ public class Account {
         } // end of if-else
     } // end of while
   }
+  
+  public void deletenotifications (){
+    this.Notifications = new List<String>();
+    }
+  
+  public void notify (String pstring){
+    if(pstring!=null)this.Notifications.append(pstring);
+    }
+  
+  public List<String> getNotifications(){
+    return this.Notifications;
+    }
   // end methods
 } // end of Account
 

@@ -32,6 +32,7 @@ public class Bestellungen {
   
   public void bestellen(Artikel partikel, Account paccount){
     Bestellung temp = new Bestellung(partikel,bestellungsnummecounter,paccount);
+    partikel.verkauft();
     bestellungsnummecounter++;
     bestellungen.append(temp);
     }

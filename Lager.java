@@ -81,6 +81,7 @@ public class Lager {
   public List<Artikel> nmostpopular(int n){
     List<Artikel> temp = new List<Artikel>();
     myitems.toFirst();
+    this.sort();
     int k = 0;
     while (myitems.hasAccess()&&k<n) { 
       temp.append(myitems.getContent());
