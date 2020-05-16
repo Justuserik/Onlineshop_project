@@ -60,10 +60,48 @@ public class Account {
   public void clearbasket() {
     this.Basket = new List<Artikel>();
   }
+  
   public List<Artikel> getWishlist() {
     return Wishlist;
   }
-
+  
+  public void clearwishlist() {
+    this.Wishlist = new List<Artikel>();
+  } 
+  
+  public void addtobasket(Artikel partikel){
+    if (partikel!=null) {
+      this.Basket.append(partikel);
+    } // end of if
+    }
+  
+  public void addtowishlist(Artikel partikel){
+    if (partikel!=null) {
+      this.Wishlist.append(partikel);
+    } // end of if
+    }
+  
+  public void removefrombasket(int partikelnummer) {
+    this.Basket.toFirst();
+    while (this.Basket.hasAccess()) { 
+      if (this.Basket.getContent().getArtikelnummer()==partikelnummer) {
+        this.Basket.remove();
+      } else {
+        this.Basket.next();
+        } // end of if-else
+    } // end of while
+  }
+  
+  public void removefromwishlist(int partikelnummer) {
+    this.Wishlist.toFirst();
+    while (this.Wishlist.hasAccess()) { 
+      if (this.Wishlist.getContent().getArtikelnummer()==partikelnummer) {
+        this.Wishlist.remove();
+      } else {
+        this.Wishlist.next();  
+        } // end of if-else
+    } // end of while
+  }
   // end methods
 } // end of Account
 
