@@ -162,7 +162,7 @@ public class Onlineshop_Server extends Server {
         break;
       case "?DELETENOTIFICATIONS" :
         if (temp.getMyaccount()!=null) {
-          temp.getMyaccount().clearwishlist();
+          temp.getMyaccount().deletenotifications();
           this.send(pClientIP,pClientPort,"!DELETENOTIFICATIONS");
         } else {
           this.send(pClientIP,pClientPort,"FAILURE");
