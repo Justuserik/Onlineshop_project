@@ -234,6 +234,7 @@ public class Onlineshop_Server extends Server {
         String allartikel = "!ALLARTIKEL:"+this.Artikelformat(this.myitems.getMyitems());
         this.send(pClientIP,pClientPort,allartikel); 
         }
+        break;
       default:
         this.send(pClientIP,pClientPort,"-ERR");
         break;
