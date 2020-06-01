@@ -1,6 +1,6 @@
 object InterfaceForServer: TFGUIForm
   Left = 2004
-  Top = -337
+  Top = 0
   BorderIcons = [biSystemMenu]
   Caption = 'InterfaceForServer'
   ClientHeight = 326
@@ -10,6 +10,7 @@ object InterfaceForServer: TFGUIForm
   FormStyle = fsStayOnTop
   OldCreateOrder = True
   Position = poDesigned
+  ShowHint = True
   Visible = True
   OnClose = FormClose
   OnCloseQuery = FormCloseQuery
