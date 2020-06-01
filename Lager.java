@@ -39,6 +39,7 @@ public class Lager {
   }
   
   public Artikel searchitemtbynumber(int number){
+    myitems.toFirst();
     while (this.myitems.hasAccess()) { 
       if (this.myitems.getContent().getArtikelnummer()==number) {
         return myitems.getContent();
