@@ -12,13 +12,15 @@ import java.net.Socket;
  */
 
 public class Onlineshop_Client extends Client {
-  
-  public Onlineshop_Client(){
+  private ClientGuiCommandBased mygui;
+  public Onlineshop_Client(ClientGuiCommandBased pgui){
     super("192.168.178.24",80);
+    this.mygui = pgui;
     }
   
   public void processMessage(String pMessage){
-    
+    //this could be automized but my time is precious
+    this.mygui.print(pMessage);
     }         
 } // end of Onlineshop_Client
 
