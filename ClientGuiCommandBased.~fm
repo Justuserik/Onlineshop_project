@@ -10,6 +10,7 @@ object ClientGuiCommandBased: TFGUIForm
   FormStyle = fsStayOnTop
   OldCreateOrder = True
   Position = poDesigned
+  ShowHint = True
   Visible = True
   OnClose = FormClose
   OnCloseQuery = FormCloseQuery

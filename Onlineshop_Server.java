@@ -11,16 +11,18 @@ public class Onlineshop_Server extends Server {
   private Lager myitems;
   private Bestellungen myorders;
   private List<User> onlineusers;
-  public Onlineshop_Server(){
+  private InterfaceForServer mygui;
+  public Onlineshop_Server(InterfaceForServer pgui){
     super(80);
     userbank = new Userbank();
     myitems = new Lager();
     myorders = new Bestellungen();
     onlineusers = new List<User>();
+    this.mygui = pgui;
   }
   
   public static void main(String[] args){
-    new Onlineshop_Server();
+    new Onlineshop_Server(null);
     }
   
   public void processNewConnection(String pClientIP, int pClientPort){
@@ -296,6 +298,13 @@ public class Onlineshop_Server extends Server {
     } // end of while
     return notifications;
   }
+
+  public void addproduct(String name, String beschreibung, String hersteller, int preis){
+    this.myitems.additem(name,preis,beschreibung,hersteller);
+    }
   
+  public void notifyall(){
+    
+   }
 } // end of Onlineshop_Server
 

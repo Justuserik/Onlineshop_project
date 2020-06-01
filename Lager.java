@@ -21,7 +21,7 @@ public class Lager {
   public List<Artikel> getMyitems() {
     return myitems;
   }
-
+  
   public void setMyitems(List<Artikel> myitemsNew) {
     myitems = myitemsNew;
   }
@@ -36,7 +36,7 @@ public class Lager {
       this.myitems.next();
     } // end of while
     return temp;
-    }
+  }
   
   public Artikel searchitemtbynumber(int number){
     while (this.myitems.hasAccess()) { 
@@ -46,7 +46,7 @@ public class Lager {
       this.myitems.next();
     } // end of while
     return null;
-    }
+  }
   
   public void additem(String pname, int ppreis, String Beschreibung, String Hersteller) {
     Artikel temp = new Artikel(pname,artikelnummercounter,ppreis,Beschreibung,Hersteller);
@@ -71,12 +71,12 @@ public class Lager {
         if (myitems.getContent()==max) {
           myitems.remove();
         } else {
-           myitems.next();  
-          } // end of if-else
+          myitems.next();  
+        } // end of if-else
       } // end of while
     } // end of while
     this.myitems.concat(temp);
-    }
+  }
   
   public List<Artikel> nmostpopular(int n){
     List<Artikel> temp = new List<Artikel>();
@@ -89,7 +89,7 @@ public class Lager {
       k++;
     } // end of while
     return temp;
-    }
+  }
   // end methods
 } // end of Lager
 
