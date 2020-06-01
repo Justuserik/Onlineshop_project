@@ -14,7 +14,7 @@ public class Lager {
   // end attributes
   
   public Lager() {
-    this.myitems = null;
+    this.myitems = new List<Artikel>();
   }
 
   // start methods
