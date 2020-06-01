@@ -1,5 +1,5 @@
 ﻿[Files]
-File0=C:\Users\Justus.S\Documents\GitHub\Onlineshop_project\Account.java
+File0=C:\Users\Stamm\Documents\GitHub\Onlineshop_project\Account.java
 
 [Box:  - Account]
 X=20
@@ -28,8 +28,8 @@ ShowObjectDiagram=0
 I0=
 
 [Window]
-Left=78
-Top=78
-Width=1124
-Height=375
+Left=156
+Top=156
+Width=1203
+Height=516
 

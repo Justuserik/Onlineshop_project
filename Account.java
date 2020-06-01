@@ -44,7 +44,7 @@ public class Account {
   }
 
   public List<Artikel> getBasket() {
-    return null;
+    return this.Basket;
   }
 
   public void setBasket(List<Artikel> BasketNew) {
