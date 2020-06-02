@@ -1,10 +1,10 @@
 object InterfaceForServer: TFGUIForm
-  Left = 2004
-  Top = 0
+  Left = 1841
+  Top = -294
   BorderIcons = [biSystemMenu]
   Caption = 'InterfaceForServer'
   ClientHeight = 326
-  ClientWidth = 459
+  ClientWidth = 963
   Color = clBtnFace
   ParentFont = True
   FormStyle = fsStayOnTop
@@ -276,5 +276,139 @@ object InterfaceForServer: TFGUIForm
     HorizontalAlignment = LEFT
     Text = ''
     Editable = True
+  end
+  object jTextArea1: TJTextArea
+    Tag = 3
+    Left = 392
+    Top = 32
+    Width = 280
+    Height = 284
+    Cursor = crIBeam
+    Hint = 'jTextArea1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = [fsBold]
+    Foreground = 3355443
+    Background = clWhite
+    LineWrap = False
+    HorizontalScrollBarPolicy = AS_NEEDED
+    VerticalScrollBarPolicy = AS_NEEDED
+    WrapStyleWord = False
+    TabSize = 8
+    Editable = True
+  end
+  object jLabel5: TJLabel
+    Tag = 1
+    Left = 392
+    Top = 8
+    Width = 110
+    Height = 20
+    Hint = 'jLabel5'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = [fsBold]
+    Foreground = 3355443
+    Background = clBtnFace
+    Text = 'text'
+    HorizontalAlignment = LEFT
+    VerticalAlignment = CENTER
+    HorizontalTextPosition = RIGHT
+    VerticalTextPosition = CENTER
+    IconTextGap = 4
+    DisplayedMnemonic = 0
+    DisplayedMnemonicIndex = 0
+  end
+  object jTextArea2: TJTextArea
+    Tag = 3
+    Left = 680
+    Top = 32
+    Width = 280
+    Height = 284
+    Cursor = crIBeam
+    Hint = 'jTextArea2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = [fsBold]
+    Foreground = 3355443
+    Background = clWhite
+    LineWrap = False
+    HorizontalScrollBarPolicy = AS_NEEDED
+    VerticalScrollBarPolicy = AS_NEEDED
+    WrapStyleWord = False
+    TabSize = 8
+    Editable = True
+  end
+  object jLabel6: TJLabel
+    Tag = 1
+    Left = 680
+    Top = 8
+    Width = 110
+    Height = 20
+    Hint = 'jLabel6'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = [fsBold]
+    Foreground = 3355443
+    Background = clBtnFace
+    Text = 'text'
+    HorizontalAlignment = LEFT
+    VerticalAlignment = CENTER
+    HorizontalTextPosition = RIGHT
+    VerticalTextPosition = CENTER
+    IconTextGap = 4
+    DisplayedMnemonic = 0
+    DisplayedMnemonicIndex = 0
+  end
+  object jButton3: TJButton
+    Tag = 4
+    Left = 272
+    Top = 248
+    Width = 107
+    Height = 73
+    Hint = 'jButton3'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = [fsBold]
+    Foreground = 3355443
+    Background = 15658734
+    actionPerformed = 'jButton3_ActionPerformed'
+    Text = 'jButton3'
+    Mnemonic = 0
+    DisplayedMnemonicIndex = 0
+    Selected = False
+    BorderPainted = True
+    FocusPainted = False
+    ContentAreaFilled = True
+    HorizontalAlignment = CENTER
+    VerticalAlignment = CENTER
+    HorizontalTextPosition = RIGHT
+    VerticalTextPosition = CENTER
+    IconTextGap = 4
+    RolloverEnabled = False
+    Border.BorderType = NoBorder
+    Border.LineColor = clBlack
+    Border.LineThickness = 0
+    Border.LineRounded = False
+    Border.EtchHighlightColor = clBlack
+    Border.EtchShadowColor = clBlack
+    Border.Etchtype = 0
+    Border.BevelHighlightColor = clBlack
+    Border.BevelShadowColor = clBlack
+    Border.Beveltype = 0
+    Border.MatteColor = clBlack
+    Border.MatteTop = 0
+    Border.MatteLeft = 0
+    Border.MatteBottom = 0
+    Border.MatteRight = 0
   end
 end

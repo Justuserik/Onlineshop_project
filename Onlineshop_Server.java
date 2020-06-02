@@ -350,5 +350,27 @@ public class Onlineshop_Server extends Server {
     } // end of while
     return commandsstring;
   }
+  
+  public String allaccounts(){
+    String pstring = "username,passwort,email";
+    List<Account> temp = this.userbank.getUsers();
+    temp.toFirst(); 
+    while (temp.hasAccess()) { 
+      pstring=pstring + temp.getContent().getName()+","+temp.getContent().getPasswort()+","+temp.getContent().getEmail()+"\n";
+      temp.next();
+    } // end of while
+    return pstring;
+    }
+  
+  public String allarticles(){
+    String pstring = "artikelnummer,name,beschreibung,preis,hersteller";
+    List<Artikel> plis = this.myitems.getMyitems();
+    while (plis.hasAccess()) { 
+      pstring = pstring+ plis.getContent().getArtikelnummer() + "," + plis.getContent().getName()+","+plis.getContent().getBeschreibung()+","+plis.getContent().getPreis()+","+plis.getContent().getHersteller()+"\n";
+      plis.next();
+    } // end of while
+    return pstring;
+    }
+  
 } // end of Onlineshop_Server
 

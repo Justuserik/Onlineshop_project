@@ -24,13 +24,20 @@ public class InterfaceForServer extends JFrame {
   private JButton jButton2 = new JButton();
   private Onlineshop_Server myserver;
   private JNumberField jNumberField1 = new JNumberField();
+  private JTextArea jTextArea1 = new JTextArea("");
+    private JScrollPane jTextArea1ScrollPane = new JScrollPane(jTextArea1);
+  private JLabel jLabel5 = new JLabel();
+  private JTextArea jTextArea2 = new JTextArea("");
+    private JScrollPane jTextArea2ScrollPane = new JScrollPane(jTextArea2);
+  private JLabel jLabel6 = new JLabel();
+  private JButton jButton3 = new JButton();
   // end attributes
   
   public InterfaceForServer() { 
     // Frame-Init
     super();
     setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-    int frameWidth = 475; 
+    int frameWidth = 979; 
     int frameHeight = 365;
     setSize(frameWidth, frameHeight);
     Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
@@ -82,6 +89,25 @@ public class InterfaceForServer extends JFrame {
     jNumberField1.setBounds(8, 104, 251, 28);
     jNumberField1.setText("");
     cp.add(jNumberField1);
+    jTextArea1ScrollPane.setBounds(392, 32, 280, 284);
+    cp.add(jTextArea1ScrollPane);
+    jLabel5.setBounds(392, 8, 110, 20);
+    jLabel5.setText("Artikel");
+    cp.add(jLabel5);
+    jTextArea2ScrollPane.setBounds(680, 32, 280, 284);
+    cp.add(jTextArea2ScrollPane);
+    jLabel6.setBounds(680, 8, 110, 20);
+    jLabel6.setText("Accounts");
+    cp.add(jLabel6);
+    jButton3.setBounds(272, 248, 107, 73);
+    jButton3.setText("refresh");
+    jButton3.setMargin(new Insets(2, 2, 2, 2));
+    jButton3.addActionListener(new ActionListener() { 
+      public void actionPerformed(ActionEvent evt) { 
+        jButton3_ActionPerformed(evt);
+      }
+    });
+    cp.add(jButton3);
     // end components
     this.myserver = new Onlineshop_Server(this);
     setVisible(true);
@@ -105,6 +131,13 @@ public class InterfaceForServer extends JFrame {
   public void jButton2_ActionPerformed(ActionEvent evt) {
     this.myserver.close();
   } // end of jButton2_ActionPerformed
+  
+  public void jButton3_ActionPerformed(ActionEvent evt) {
+    jTextArea1.setText("");
+    jTextArea2.setText("");
+    jTextArea1.setText(this.myserver.allaccounts());
+    jTextArea2.setText(this.myserver.allarticles());
+  } // end of jButton3_ActionPerformed
 
   // end methods
 } // end of class InterfaceForServer
