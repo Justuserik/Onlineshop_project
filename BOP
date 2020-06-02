@@ -19,4 +19,5 @@ gibberish -> !ERR
 ?RECOMMEND:topn -> !RECOMMEND:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:
 ?ARTIKEL:artikelnummer -> !ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller
 ?ALLARTIKEL ->!ALLARTIKEL:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller
+?COMMANDS -> the server will send all the commands to the client
 P.s.: the server may reply with FAILURE. In this case the User is usually not logged in, and therefore can't use the requested service.
