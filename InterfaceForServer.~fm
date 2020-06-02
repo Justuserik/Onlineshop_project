@@ -1,6 +1,6 @@
 object InterfaceForServer: TFGUIForm
   Left = 1841
-  Top = -294
+  Top = 0
   BorderIcons = [biSystemMenu]
   Caption = 'InterfaceForServer'
   ClientHeight = 326

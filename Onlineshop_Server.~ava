@@ -365,6 +365,7 @@ public class Onlineshop_Server extends Server {
   public String allarticles(){
     String pstring = "artikelnummer,name,beschreibung,preis,hersteller";
     List<Artikel> plis = this.myitems.getMyitems();
+    plis.toFirst();
     while (plis.hasAccess()) { 
       pstring = pstring+ plis.getContent().getArtikelnummer() + "," + plis.getContent().getName()+","+plis.getContent().getBeschreibung()+","+plis.getContent().getPreis()+","+plis.getContent().getHersteller()+"\n";
       plis.next();
