@@ -1,9 +1,9 @@
 object ClientGuiCommandBased: TFGUIForm
-  Left = 2596
-  Top = 113
+  Left = 252
+  Top = 209
   BorderIcons = [biSystemMenu]
   Caption = 'ClientGuiCommandBased'
-  ClientHeight = 347
+  ClientHeight = 373
   ClientWidth = 574
   Color = clBtnFace
   ParentFont = True
@@ -172,5 +172,49 @@ object ClientGuiCommandBased: TFGUIForm
     IconTextGap = 4
     DisplayedMnemonic = 0
     DisplayedMnemonicIndex = 0
+  end
+  object jButton3: TJButton
+    Tag = 4
+    Left = 16
+    Top = 344
+    Width = 539
+    Height = 25
+    Hint = 'jButton3'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = [fsBold]
+    Foreground = 3355443
+    Background = 15658734
+    actionPerformed = 'jButton3_ActionPerformed'
+    Text = 'jButton3'
+    Mnemonic = 0
+    DisplayedMnemonicIndex = 0
+    Selected = False
+    BorderPainted = True
+    FocusPainted = False
+    ContentAreaFilled = True
+    HorizontalAlignment = CENTER
+    VerticalAlignment = CENTER
+    HorizontalTextPosition = RIGHT
+    VerticalTextPosition = CENTER
+    IconTextGap = 4
+    RolloverEnabled = False
+    Border.BorderType = NoBorder
+    Border.LineColor = clBlack
+    Border.LineThickness = 0
+    Border.LineRounded = False
+    Border.EtchHighlightColor = clBlack
+    Border.EtchShadowColor = clBlack
+    Border.Etchtype = 0
+    Border.BevelHighlightColor = clBlack
+    Border.BevelShadowColor = clBlack
+    Border.Beveltype = 0
+    Border.MatteColor = clBlack
+    Border.MatteTop = 0
+    Border.MatteLeft = 0
+    Border.MatteBottom = 0
+    Border.MatteRight = 0
   end
 end

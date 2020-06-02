@@ -12,6 +12,7 @@ public class Onlineshop_Server extends Server {
   private Bestellungen myorders;
   private List<User> onlineusers;
   private InterfaceForServer mygui;
+  private List<String> commands;
   public Onlineshop_Server(InterfaceForServer pgui){
     super(80);
     userbank = new Userbank();
@@ -19,6 +20,27 @@ public class Onlineshop_Server extends Server {
     myorders = new Bestellungen();
     onlineusers = new List<User>();
     this.mygui = pgui;
+    commands = new List<String>();
+    commands.append("?LOGIN:username:password -> !LOGGEDIN / !LOGINERROR");
+    commands.append("?BASKET -> !BASKET:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:");
+    commands.append("?SEARCH:keyword -> !RESULTS:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:");
+    commands.append("?ADDTOBASKET:artikelnummer -> !ADDTOBASKET:SUCCESS/FAILURE:artikelnummer");
+    commands.append("?REMOVEFROMBASKET:artikelnummer -> !REMOVEFROMBASKET:SUCCESS/FAILURE:artikelnummer");
+    commands.append("?NEWACCOUNT:username:password:email -> !NEWACCOUNT:SUCCESS/FAILURE:username");
+    commands.append("?LOGOUT&BUY -> !LOGOUT&BUY:SUCCESS/FAILURE");
+    commands.append("?CLEARBASKET -> !CLEARBASKET");
+    commands.append("gibberish -> !ERR");
+    commands.append("?HISTORY -> !HISTORY:!BESTELLUNG:artikelnummer,name,beschreibung,preis,hersteller,bestellungsnummer:!BESTELLUNG:artikelnummer,name,beschreibung,preis,hersteller,bestellungsnummer");
+    commands.append("?NOTIFICATIONS -> !NOTIFICATION:text:!NOTIFICATION");
+    commands.append("?DELETENOTIFICATIONS -> !DELETENOTIFICATIONS");
+    commands.append("?WISHLIST -> !WISHLIST:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL");
+    commands.append("?ADDTOWISHLIST:artikelnummer -> !ADDTOWISHLIST:SUCCESS/FAILURE:artikelnummer");
+    commands.append("?REMOVEFROMWISHLIST:artikelnummer -> !REMOVEFROMWISHLIST:SUCCESS/FAILURE:artikelnummer");
+    commands.append("?CLEARWISHLIST -> !CLEARWISHLIST");
+    commands.append("?RECOMMEND:topn -> !RECOMMEND:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:");
+    commands.append("?ARTIKEL:artikelnummer -> !ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller");
+    commands.append("?ALLARTIKEL ->!ALLARTIKEL:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller");
+    commands.append("?COMMANDS -> the server will send all the commands to the client");
   }
   
   public static void main(String[] args){
@@ -235,6 +257,9 @@ public class Onlineshop_Server extends Server {
         this.send(pClientIP,pClientPort,allartikel); 
         }
         break;
+        case "COMMANDS" :
+        this.send(pClientIP,pClientPort,this.getallcommands());
+        break;
       default:
         this.send(pClientIP,pClientPort,"-ERR");
         break;
@@ -312,5 +337,15 @@ public class Onlineshop_Server extends Server {
   public void notifyall(){
     
    }
+  
+  public String getallcommands(){
+    this.commands.toFirst();
+    String commandsstring = "";
+    while (this.commands.hasAccess()) { 
+      commandsstring = commandsstring + commands.getContent() + "\n";
+      this.commands.next();
+    } // end of while
+    return commandsstring;
+    }
 } // end of Onlineshop_Server
 
