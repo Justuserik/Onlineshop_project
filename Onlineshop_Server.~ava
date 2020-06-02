@@ -45,7 +45,7 @@ public class Onlineshop_Server extends Server {
   
   public static void main(String[] args){
     new Onlineshop_Server(null);
-    }
+  }
   
   public void processNewConnection(String pClientIP, int pClientPort){
     User temp = new User(pClientIP,pClientPort);
@@ -249,15 +249,15 @@ public class Onlineshop_Server extends Server {
           val.append(item);
           String back = this.Artikelformat(val);
           this.send(pClientIP,pClientPort,back);
-                  }
-        break;
-        case "?ALLARTIKEL" :
-        {
-        String allartikel = "!ALLARTIKEL:"+this.Artikelformat(this.myitems.getMyitems());
-        this.send(pClientIP,pClientPort,allartikel); 
         }
         break;
-        case "COMMANDS" :
+      case "?ALLARTIKEL" :
+        {
+        String allartikel = "!ALLARTIKEL:"+this.Artikelformat(this.myitems.getMyitems());
+          this.send(pClientIP,pClientPort,allartikel); 
+        }
+        break;
+      case "?COMMANDS" :
         this.send(pClientIP,pClientPort,this.getallcommands());
         break;
       default:
@@ -329,14 +329,14 @@ public class Onlineshop_Server extends Server {
     } // end of while
     return notifications;
   }
-
+  
   public void addproduct(String name, String beschreibung, String hersteller, int preis){
     this.myitems.additem(name,preis,beschreibung,hersteller);
-    }
+  }
   
   public void notifyall(){
     
-   }
+  }
   
   public String getallcommands(){
     this.commands.toFirst();
@@ -346,6 +346,6 @@ public class Onlineshop_Server extends Server {
       this.commands.next();
     } // end of while
     return commandsstring;
-    }
+  }
 } // end of Onlineshop_Server
 
