@@ -8,4 +8,4 @@ Außerdem solltet ihr euch nur mit den .java Files beschäftigen. Die meisten an
 
 https://youtu.be/MAlSjtxy5ak
 
-Weil das Projekt nun in der End-phase ist, hier noch eine weitere Info: Für das ausführen des Servers bitte nur die .jar files benutzen.
+Weil das Projekt nun in der End-phase ist, hier noch eine weitere Info: Für das Ausführen des Servers bitte nur die .jar files benutzen.
