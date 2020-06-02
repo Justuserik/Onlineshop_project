@@ -258,7 +258,10 @@ public class Onlineshop_Server extends Server {
         }
         break;
       case "?COMMANDS" :
-        this.send(pClientIP,pClientPort,this.getallcommands());
+        {
+        String sendback = this.getallcommands();  
+        this.send(pClientIP,pClientPort,sendback);
+         } 
         break;
       default:
         this.send(pClientIP,pClientPort,"-ERR");
