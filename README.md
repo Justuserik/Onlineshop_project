@@ -7,3 +7,5 @@ Außerdem solltet ihr euch nur mit den .java Files beschäftigen. Die meisten an
 ################# NUR DIE .JAVA FILES SIND WICHTIG DER REST IST JAVA EDITOR MÜLL##################################################
 
 https://youtu.be/MAlSjtxy5ak
+
+Weil das Projekt nun in der End-phase ist, hier noch eine weitere Info: Für das ausführen des Servers bitte nur die .jar files benutzen.
