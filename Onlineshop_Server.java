@@ -257,7 +257,7 @@ public class Onlineshop_Server extends Server {
         this.send(pClientIP,pClientPort,allartikel); 
         }
         break;
-        case "COMMANDS" :
+        case "?COMMANDS" :
         this.send(pClientIP,pClientPort,this.getallcommands());
         break;
       default:
