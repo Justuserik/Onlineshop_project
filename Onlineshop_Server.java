@@ -352,7 +352,7 @@ public class Onlineshop_Server extends Server {
   }
   
   public String allaccounts(){
-    String pstring = "username,passwort,email";
+    String pstring = "username,passwort,email"+"\n";
     List<Account> temp = this.userbank.getUsers();
     temp.toFirst(); 
     while (temp.hasAccess()) { 
@@ -363,7 +363,7 @@ public class Onlineshop_Server extends Server {
     }
   
   public String allarticles(){
-    String pstring = "artikelnummer,name,beschreibung,preis,hersteller";
+    String pstring = "artikelnummer,name,beschreibung,preis,hersteller"+"\n";
     List<Artikel> plis = this.myitems.getMyitems();
     plis.toFirst();
     while (plis.hasAccess()) { 
