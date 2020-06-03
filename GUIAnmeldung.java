@@ -23,6 +23,7 @@ public class GUIAnmeldung extends JFrame{
   Onlineshop_Client GUIClient;
     
   public GUIAnmeldung(){
+    super();
     this.getContentPane().setLayout(null);
     this.initWindowAnmeldung();
   }
@@ -54,6 +55,7 @@ public class GUIAnmeldung extends JFrame{
         ButtonAnmeldungClicked();
       }
     });
+
     setVisible(true);
   }
   
