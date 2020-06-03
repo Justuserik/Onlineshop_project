@@ -1,6 +1,6 @@
 object ClientGuiCommandBased: TFGUIForm
   Left = 527
-  Top = 684
+  Top = 276
   BorderIcons = [biSystemMenu]
   Caption = 'ClientGuiCommandBased'
   ClientHeight = 405
