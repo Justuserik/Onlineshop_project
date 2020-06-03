@@ -41,6 +41,7 @@ public class Onlineshop_Server extends Server {
     commands.append("?ARTIKEL:artikelnummer -> !ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller");
     commands.append("?ALLARTIKEL ->!ALLARTIKEL:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller:!ARTIKEL:artikelnummer,name,beschreibung,preis,hersteller");
     commands.append("?COMMANDS -> the server will send all the commands to the client");
+    commands.append("?QUIT");
   }
   
   public static void main(String[] args){
@@ -260,8 +261,16 @@ public class Onlineshop_Server extends Server {
       case "?COMMANDS" :
         {
         String sendback = this.getallcommands();  
-        this.send(pClientIP,pClientPort,sendback);
-         } 
+          this.send(pClientIP,pClientPort,sendback);
+        } 
+        break;
+      case "?QUIT" :
+        { 
+          if (temp.getMyaccount()!=null) {
+            temp.getMyaccount().clearbasket();
+          } // end of if
+          this.closeConnection(pClientIP,pClientPort);
+        }
         break;
       default:
         this.send(pClientIP,pClientPort,"-ERR");
@@ -360,7 +369,7 @@ public class Onlineshop_Server extends Server {
       temp.next();
     } // end of while
     return pstring;
-    }
+  }
   
   public String allarticles(){
     String pstring = "artikelnummer,name,beschreibung,preis,hersteller"+"\n";
@@ -371,7 +380,7 @@ public class Onlineshop_Server extends Server {
       plis.next();
     } // end of while
     return pstring;
-    }
+  }
   
 } // end of Onlineshop_Server
 

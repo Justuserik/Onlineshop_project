@@ -1,6 +1,6 @@
 ﻿[Files]
-File0=C:\Users\Stamm\Documents\GitHub\Onlineshop_project\Client.java
-File1=C:\Users\Stamm\Documents\GitHub\Onlineshop_project\Onlineshop_Client.java
+File0=C:\Users\Justus.S\Documents\GitHub\Onlineshop_project\Client.java
+File1=C:\Users\Justus.S\Documents\GitHub\Onlineshop_project\Onlineshop_Client.java
 
 [Box:  - Client]
 X=980
@@ -45,7 +45,7 @@ FontName=Segoe UI
 [Diagram]
 comments=0
 OffsetX=0
-OffsetY=0
+OffsetY=595
 Visibility=0
 ShowParameter=4
 SortOrder=0
@@ -56,9 +56,9 @@ Fontsize=14
 ShowObjectDiagram=0
 
 [Connections]
-V0=Client#Client$MessageHandler#AssociationDirected####0#0#0###0#0
-V1=Client#Client$MessageHandler$SocketWrapper#AssociationDirected####0#0#0###0#0
-V2=Onlineshop_Client#Client#Inheritends####0#0#0###0#0
+V0=Client#Client$MessageHandler#AssociationDirected##0#0#0
+V1=Client#Client$MessageHandler$SocketWrapper#AssociationDirected##0#0#0
+V2=Onlineshop_Client#Client#Inheritends##0#0#0
 
 [Interactive]
 I0=

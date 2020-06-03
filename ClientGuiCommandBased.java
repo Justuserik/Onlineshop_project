@@ -21,6 +21,8 @@ public class ClientGuiCommandBased extends JFrame {
   private JLabel jLabel1 = new JLabel();
   private Onlineshop_Client myclient;
   private JButton jButton3 = new JButton();
+  private AnmeldungsGUI myanmeldung;
+  private JButton jButton4 = new JButton();
   // end attributes
   
   public ClientGuiCommandBased() { 
@@ -28,7 +30,7 @@ public class ClientGuiCommandBased extends JFrame {
     super();
     setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
     int frameWidth = 590; 
-    int frameHeight = 412;
+    int frameHeight = 444;
     setSize(frameWidth, frameHeight);
     Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
     int x = (d.width - getSize().width) / 2;
@@ -74,9 +76,20 @@ public class ClientGuiCommandBased extends JFrame {
       }
     });
     cp.add(jButton3);
+    jButton4.setBounds(16, 376, 539, 25);
+    jButton4.setText("QUIT");
+    jButton4.setMargin(new Insets(2, 2, 2, 2));
+    jButton4.addActionListener(new ActionListener() { 
+      public void actionPerformed(ActionEvent evt) { 
+        jButton4_ActionPerformed(evt);
+      }
+    });
+    cp.add(jButton4);
     // end components
     this.myclient = new Onlineshop_Client(this);
-    setVisible(true);
+    this.myanmeldung = new AnmeldungsGUI(this);
+    this.setVisible(true);
+    setVisible(false);
   } // end of public ClientGuiCommandBased
   
   // start methods
@@ -101,6 +114,19 @@ public class ClientGuiCommandBased extends JFrame {
   public void jButton3_ActionPerformed(ActionEvent evt) {
     this.myclient.send("?COMMANDS");
   } // end of jButton3_ActionPerformed
+  
+  public void send(String pstring){
+    this.myclient.send(pstring);
+    }
+  
+  public void angemeldet(){
+    this.myanmeldung.setVisible(false);
+    this.setVisible(true);
+    }
+
+  public void jButton4_ActionPerformed(ActionEvent evt) {
+    this.myclient.send("?QUIT");
+  } // end of jButton4_ActionPerformed
 
   // end methods
     }

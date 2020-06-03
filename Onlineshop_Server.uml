@@ -1,5 +1,5 @@
 ﻿[Files]
-File0=C:\Users\Stamm\Documents\GitHub\Onlineshop_project\Onlineshop_Server.java
+File0=C:\Users\Justus.S\Documents\GitHub\Onlineshop_project\Onlineshop_Server.java
 
 [Box:  - Onlineshop_Server]
 X=2090
@@ -65,17 +65,17 @@ Fontsize=14
 ShowObjectDiagram=0
 
 [Connections]
-V0=Onlineshop_Server#Server#Inheritends####0#0#0###0#0
-V1=Server#Server$ClientMessageHandler#AssociationDirected####0#0#0###0#0
-V2=Server#Server$ClientMessageHandler$ClientSocketWrapper#AssociationDirected####0#0#0###0#0
-V3=Server#Server$NewConnectionHandler#AssociationDirected####0#0#0###0#0
+V0=Onlineshop_Server#Server#Inheritends##0#0#0
+V1=Server#Server$ClientMessageHandler#AssociationDirected##0#0#0
+V2=Server#Server$ClientMessageHandler$ClientSocketWrapper#AssociationDirected##0#0#0
+V3=Server#Server$NewConnectionHandler#AssociationDirected##0#0#0
 
 [Interactive]
 I0=
 
 [Window]
-Left=52
-Top=52
-Width=1203
-Height=516
+Left=156
+Top=156
+Width=1124
+Height=375
 

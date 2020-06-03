@@ -20,7 +20,11 @@ public class Onlineshop_Client extends Client {
   
   public void processMessage(String pMessage){
     //this could be automized but my time is precious
-    this.mygui.print(pMessage);
+    if (pMessage.equals("!LOGGEDIN")||pMessage.startsWith("!NEWACCOUNT:SUCCESS")) {
+      this.mygui.angemeldet();
+    } else {
+      this.mygui.print(pMessage);
+    } // end of if-else
     }         
 } // end of Onlineshop_Client
 
