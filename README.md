@@ -11,3 +11,6 @@ https://youtu.be/MAlSjtxy5ak
 Weil das Projekt nun in der End-phase ist, hier noch eine weitere Info: Für das Ausführen des Servers bitte nur die .jar files benutzen.
 
 Das Projekt ist nun abgeschlossen. Das Protokoll ist weitesgehend final und es werden nur noch fixes gepushed werden. Sollte man die Client-seitige .jar Datei ausführen wollen, dann wird zuerst die Eingabe von den Nutzerdaten bzw. der Erzeugung eines neuen Accounts gebeten. Darauf kann man dann mit dem Server kommunizieren, indem man die spezifizierten Commands verwendet. 
+
+Hier ein Video, welches ein wenig in das Projekt einführt:
+https://drive.google.com/file/d/1togdJKfQdzlYfXaIOFfDGV2PW8gMlhOX/view?usp=sharing
