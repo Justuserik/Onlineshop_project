@@ -20,6 +20,7 @@ public class ClientGuiCommandBased extends JFrame {
   private JTextField jTextField1 = new JTextField();
   private JLabel jLabel1 = new JLabel();
   private Onlineshop_Client myclient;
+  private JButton jButton3 = new JButton();
   // end attributes
   
   public ClientGuiCommandBased() { 
@@ -27,7 +28,7 @@ public class ClientGuiCommandBased extends JFrame {
     super();
     setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
     int frameWidth = 590; 
-    int frameHeight = 386;
+    int frameHeight = 412;
     setSize(frameWidth, frameHeight);
     Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
     int x = (d.width - getSize().width) / 2;
@@ -64,6 +65,15 @@ public class ClientGuiCommandBased extends JFrame {
     jLabel1.setBounds(16, 0, 534, 36);
     jLabel1.setText("Command Console");
     cp.add(jLabel1);
+    jButton3.setBounds(16, 344, 539, 25);
+    jButton3.setText("Commands");
+    jButton3.setMargin(new Insets(2, 2, 2, 2));
+    jButton3.addActionListener(new ActionListener() { 
+      public void actionPerformed(ActionEvent evt) { 
+        jButton3_ActionPerformed(evt);
+      }
+    });
+    cp.add(jButton3);
     // end components
     this.myclient = new Onlineshop_Client(this);
     setVisible(true);
@@ -87,5 +97,12 @@ public class ClientGuiCommandBased extends JFrame {
   public void print(String pstring){
     this.jTextArea1.append(pstring+"\n");
     }
-} // end of class ClientGuiCommandBased
+  
+  public void jButton3_ActionPerformed(ActionEvent evt) {
+    this.myclient.send("?COMMANDS");
+  } // end of jButton3_ActionPerformed
+
+  // end methods
+    }
+
 
