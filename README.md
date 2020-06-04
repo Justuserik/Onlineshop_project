@@ -24,6 +24,6 @@ Jonathan / Lukas: Dokumentieren den Code.
 Letzte Gedanken zu dem Projekt:
 Schade, dass es nicht umfangreicher und ausführlicher geworden ist. Jedoch bedanke ich mich, dass ich mein Projekt nicht noch weiter verkürzen musste, um den Vorstellungen anderer nachzukommen. 
 
-Alles in allem ist das Projekt jedoch ein Erfolg geworden. Deshalb bedanke ich micht bei Laser für seine Bereitschaft, dass Projekt mitzuverfolgen und nachzuvollziehen, bei Simon für seine Bereitschaft sich den Aufgaben des GKs zu widmen, und bei Lukas & Jonathan für ihren Einsatz in der Dokumentation des Codes (welche hoffentlich bald dem Projekt hinzugefügt werden kann).
+Alles in allem ist das Projekt jedoch ein Erfolg geworden. Deshalb bedanke ich micht bei Laser für seine Bereitschaft, das Projekt mitzuverfolgen und nachzuvollziehen, bei Simon für seine besondere Bereitschaft sich den Aufgaben des GKs zu widmen, und bei Lukas & Jonathan für ihren herausragenden Einsatz in der Dokumentation des Codes (welche unter InformatikProjektDokumentation.PDF zu finden ist).
 
 JES
