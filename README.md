@@ -14,5 +14,16 @@ Das Projekt ist nun abgeschlossen. Das Protokoll ist weitesgehend final und es w
 
 Hier ein Video, welches ein wenig in das Projekt einführt:
 https://drive.google.com/file/d/1togdJKfQdzlYfXaIOFfDGV2PW8gMlhOX/view?usp=sharing
-!Dieses gesammte Projekt ist die Leistung von Justus E. Stamm!
-(Bis auf eine nicht genutzte Klasse von Simon)
+Anmerkung: jede genutzte Zeile Code ist von JES.
+Credits:
+Code, Protokoll, Gui, sämtliche Ideen: Justus Erik Stamm
+Mitverfolger: Laser Özmen (Die einzige Person investiert genug in das Projekt, um einen Github Account zu erstellen)
+Ich bedanke mich bei Simon um seine Bemühungen dem Arbeitsaufrag des GKs nachzukommen.
+Jonathan / Lukas: Dokumentieren den Code.
+
+Letzte Gedanken zu dem Projekt:
+Schade, dass es nicht umfangreicher und ausführlicher geworden ist. Jedoch bedanke ich mich, dass ich mein Projekt nicht noch weiter verkürzen musste, um den Vorstellungen anderer nachzukommen. 
+
+Alles in allem ist das Projekt jedoch ein Erfolg geworden. Deshalb bedanke ich micht bei Laser für seine Bereitschaft, dass Projekt mitzuverfolgen und nachzuvollziehen, bei Simon für seine Bereitschaft sich den Aufgaben des GKs zu widmen, und bei Lukas & Jonathan für ihren Einsatz in der Dokumentation des Codes (welche hoffentlich bald dem Projekt hinzugefügt werden kann).
+
+JES
