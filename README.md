@@ -19,7 +19,7 @@ Anmerkung: jede genutzte Zeile Code ist von JES.
 Credits:
 Code, Protokoll, Gui, Vision: Justus E. Stamm
 Mitverfolger: Laser Özmen (Die einzige Person investiert genug in das Projekt, um einen Github Account zu erstellen)
-Gui: Simon (Ich bedanke mich bei Simon für seine Bemühungen dem Arbeitsaufrag des GKs nachzukommen (hat den Vorgänger der jetzigen GUI geschrieben (zum Teil finden unter GUIAnmeldung.java)).
+Gui: Simon (Ich bedanke mich bei Simon für seine Bemühungen dem Arbeitsaufrag des GKs nachzukommen (hat den Vorgänger der jetzigen GUI geschrieben (zum Teil zu finden unter GUIAnmeldung.java)).
 Dokumentation des Codes: Jonathan / Lukas
 
 Letzte Gedanken zu dem Projekt:
