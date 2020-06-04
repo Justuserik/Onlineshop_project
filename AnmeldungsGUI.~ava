@@ -8,7 +8,7 @@ import javax.swing.event.*;
  * Description
  *
  * @version 1.0 from 6/3/2020
- * @author 
+ * @author Justus Erik Stamm
  */
 
 public class AnmeldungsGUI extends JFrame {

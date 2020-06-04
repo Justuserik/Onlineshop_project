@@ -8,7 +8,7 @@ import java.net.Socket;
  * Description
  *
  * @version 1.0 from 5/12/2020
- * @author 
+ * @author Justus Erik Stamm
  */
 
 public class Onlineshop_Client extends Client {

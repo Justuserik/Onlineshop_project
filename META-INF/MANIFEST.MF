@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: JEClasses.jar
+Main-Class: InterfaceForServer
+Created-By: 13 (Oracle Corporation)
+

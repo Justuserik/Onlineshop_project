@@ -1,0 +1,39 @@
+[Files]
+File0=Playground.java
+
+[Box:  - ch.aplu.turtle.Playground]
+X=304
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=13
+FontName=MS Sans Serif
+
+[Box:  - ch.aplu.turtle.Playground$Point]
+X=20
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=13
+FontName=MS Sans Serif
+
+[Diagram]
+comments=0
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+ShowConnections=0
+Fontname=MS Sans Serif
+Fontsize=13
+ShowObjectDiagram=0
+
+[Interactive]
+I0=
+

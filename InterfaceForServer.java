@@ -8,7 +8,7 @@ import javax.swing.event.*;
  * Description
  *
  * @version 1.0 from 6/1/2020
- * @author 
+ * @author Justus Erik Stamm 
  */
 
 public class InterfaceForServer extends JFrame {

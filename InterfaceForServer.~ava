@@ -8,7 +8,7 @@ import javax.swing.event.*;
  * Description
  *
  * @version 1.0 from 6/1/2020
- * @author 
+ * @author Justus Erik Stamm 
  */
 
 public class InterfaceForServer extends JFrame {
@@ -92,12 +92,12 @@ public class InterfaceForServer extends JFrame {
     jTextArea1ScrollPane.setBounds(392, 32, 280, 284);
     cp.add(jTextArea1ScrollPane);
     jLabel5.setBounds(392, 8, 110, 20);
-    jLabel5.setText("Artikel");
+    jLabel5.setText("Accounts");
     cp.add(jLabel5);
     jTextArea2ScrollPane.setBounds(680, 32, 280, 284);
     cp.add(jTextArea2ScrollPane);
     jLabel6.setBounds(680, 8, 110, 20);
-    jLabel6.setText("Accounts");
+    jLabel6.setText("Artikel");
     cp.add(jLabel6);
     jButton3.setBounds(272, 248, 107, 73);
     jButton3.setText("refresh");
