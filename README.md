@@ -14,3 +14,5 @@ Das Projekt ist nun abgeschlossen. Das Protokoll ist weitesgehend final und es w
 
 Hier ein Video, welches ein wenig in das Projekt einführt:
 https://drive.google.com/file/d/1togdJKfQdzlYfXaIOFfDGV2PW8gMlhOX/view?usp=sharing
+!Dieses gesammte Projekt ist die Leistung von Justus E. Stamm!
+(Bis auf eine nicht genutzte Klasse von Simon)
