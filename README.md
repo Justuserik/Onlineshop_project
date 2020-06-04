@@ -19,8 +19,8 @@ Anmerkung: jede genutzte Zeile Code ist von JES.
 Credits:
 Code, Protokoll, Gui, Vision: Justus E. Stamm
 Mitverfolger: Laser Özmen (Die einzige Person investiert genug in das Projekt, um einen Github Account zu erstellen)
-Ich bedanke mich bei Simon für seine Bemühungen dem Arbeitsaufrag des GKs nachzukommen (hat den Vorgänger der jetzigen GUI geschrieben).
-Jonathan / Lukas: Dokumentation des Codes.
+Gui: Simon (Ich bedanke mich bei Simon für seine Bemühungen dem Arbeitsaufrag des GKs nachzukommen (hat den Vorgänger der jetzigen GUI geschrieben)).
+Dokumentation des Codes: Jonathan / Lukas
 
 Letzte Gedanken zu dem Projekt:
 Schade, dass es nicht umfangreicher und ausführlicher geworden ist. Jedoch bedanke ich mich, dass ich mein Projekt nicht noch weiter verkürzen musste, um den Vorstellungen anderer nachzukommen. 
