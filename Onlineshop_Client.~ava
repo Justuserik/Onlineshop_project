@@ -14,7 +14,7 @@ import java.net.Socket;
 public class Onlineshop_Client extends Client {
   private ClientGuiCommandBased mygui;
   public Onlineshop_Client(ClientGuiCommandBased pgui){
-    super("192.168.178.24",80);
+    super("127.0.0.1",80);
     this.mygui = pgui;
     }
   
